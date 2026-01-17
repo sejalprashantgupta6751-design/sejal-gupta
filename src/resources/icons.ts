@@ -12,6 +12,14 @@ import {
   HiOutlineDocument,
   HiOutlineGlobeAsiaAustralia,
   HiOutlineRocketLaunch,
+  HiOutlinePhone,
+  HiOutlineLightBulb,
+  HiOutlinePaintBrush,
+  HiOutlineCheckCircle,
+  HiOutlineWrenchScrewdriver,
+  HiOutlineClock,
+  HiOutlineCube,
+  HiOutlineSparkles,
 } from "react-icons/hi2";
 
 import {
@@ -22,14 +30,22 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
-import {
-  SiJavascript,
-  SiNextdotjs,
-  SiFigma,
-  SiSupabase,
-} from "react-icons/si";
+import { SiJavascript, SiNextdotjs, SiFigma, SiSupabase } from "react-icons/si";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
+import {
+  FaDiscord,
+  FaGithub,
+  FaLinkedin,
+  FaX,
+  FaThreads,
+  FaInstagram,
+  FaXTwitter,
+  FaFacebook,
+  FaPinterest,
+  FaWhatsapp,
+  FaReddit,
+  FaTelegram,
+} from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -64,6 +80,14 @@ export const iconLibrary: Record<string, IconType> = {
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
+  phone: HiOutlinePhone,
+  lightbulb: HiOutlineLightBulb,
+  palette: HiOutlinePaintBrush,
+  check: HiOutlineCheckCircle,
+  tools: HiOutlineWrenchScrewdriver,
+  clock: HiOutlineClock,
+  cube: HiOutlineCube,
+  sparkles: HiOutlineSparkles,
 };
 
 export type IconLibrary = typeof iconLibrary;

@@ -150,6 +150,8 @@ export interface About extends BasePageConfig {
       timeframe: string;
       /** Role or job title */
       role: string;
+      /** Optional link to company website */
+      path?: string;
       /** Achievements at the company */
       achievements: React.ReactNode[];
       /** Images related to the experience */
@@ -237,4 +239,58 @@ export interface Gallery extends BasePageConfig {
     /** Image orientation (horizontal/vertical) */
     orientation: string;
   }>;
+}
+
+/**
+ * Process page configuration.
+ * @description Configuration for the Process page, showing design workflow steps and payment structure.
+ */
+export interface Process extends BasePageConfig {
+  /** Subtitle text appearing below the main title */
+  subtitle: string;
+  /** List of process steps */
+  steps: Array<{
+    /** Step number (01, 02, etc.) */
+    number: string;
+    /** Icon name from the icon library */
+    icon: IconName;
+    /** Step title */
+    title: string;
+    /** Step description */
+    description: string;
+    /** List of deliverables for this step */
+    deliverables: string[];
+    /** Timeline for this step */
+    timeline: string;
+  }>;
+  /** Payment structure configuration */
+  payment: {
+    /** Title for payment section */
+    title: string;
+    /** Subtitle/description for payment section */
+    subtitle: string;
+    /** Advance payment phase */
+    advance: {
+      /** Percentage (e.g., "50%") */
+      percentage: string;
+      /** Subtitle text */
+      subtitle: string;
+    };
+    /** Mid-project payment phase */
+    midProject: {
+      /** Percentage (e.g., "30%") */
+      percentage: string;
+      /** Subtitle text */
+      subtitle: string;
+    };
+    /** Final payment phase */
+    final: {
+      /** Percentage (e.g., "20%") */
+      percentage: string;
+      /** Subtitle text */
+      subtitle: string;
+    };
+    /** Disclaimer text */
+    disclaimer: string;
+  };
 }
