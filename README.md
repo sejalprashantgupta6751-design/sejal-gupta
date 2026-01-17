@@ -31,7 +31,7 @@ npm run build
 
 ## Developer
 
-Built by **Obed Sayyad**
+Built by **Obed Sayyad** - [GitHub](https://github.com/obedsayyad)
 
 ## License
 
