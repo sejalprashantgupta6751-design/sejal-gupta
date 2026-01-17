@@ -1,8 +1,10 @@
 import "@once-ui-system/core/css/styles.css";
 import "@once-ui-system/core/css/tokens.css";
 import "@/resources/custom.css";
-
+import Script from "next/script";
 import classNames from "classnames";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 import {
   Background,
@@ -165,6 +167,22 @@ export default async function RootLayout({
           <Footer />
         </Column>
       </Providers>
+      <SpeedInsights />
+      <Analytics />
+      <Script id="console-warning" strategy="afterInteractive">
+        {`
+            const warningTitleCSS =
+              "color:red; font-size:60px; font-weight: bold; -webkit-text-stroke: 1px black;";
+            const warningDescCSS = "font-size: 14px; color: #ffaa00";
+            const warningDescCSS2 = "font-size: 14px; color: #0099FF";
+            console.log("%cStop!", warningTitleCSS);
+            console.log("%cMade with love ♡ ", warningDescCSS);
+            console.log(
+              "%cCopyright © Obed Sayyad. All rights reserved.",
+              warningDescCSS2
+            );
+          `}
+      </Script>
     </Flex>
   );
 }
