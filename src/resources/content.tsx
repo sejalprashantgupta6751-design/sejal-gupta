@@ -50,8 +50,8 @@ const home: Home = {
   path: "/",
   image: "/images/sejal-avatar.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
+  title: `Portfolio Sejal Gupta`,
+  description: `Product Designer`,
   headline: <>Building design</>,
   featured: {
     display: true,
@@ -70,10 +70,10 @@ const home: Home = {
 };
 
 const about: About = {
-  path: "/about",
-  label: "About",
-  title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  path: "/",
+  label: "Home",
+  title: `Portfolio Sejal Gupta`,
+  description: `Product Designer`,
   tableOfContent: {
     display: true,
     subItems: false,

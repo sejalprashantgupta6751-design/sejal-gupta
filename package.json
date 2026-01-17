@@ -1,6 +1,7 @@
 {
   "name": "@once-ui-system/magic-portfolio",
   "version": "2.3.0",
+  "author": "Obed Sayyad",
   "scripts": {
     "dev": "next dev",
     "export": "next export",
